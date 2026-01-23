@@ -1,0 +1,15 @@
+{
+    "short_name": "SkillFlow",
+    "name": "SkillFlow - Twój rozwój",
+    "start_url": "./index.html",
+    "display": "standalone",
+    "theme_color": "#4A90E2",
+    "background_color": "#ffffff",
+    "icons": [
+      {
+        "src": "icon-192.png",
+        "type": "image/png",
+        "sizes": "192x192"
+      }
+    ]
+  }

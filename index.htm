@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="manifest" href="./public/manifest.json">
+    <title>SkillFlow</title>
+</head>
+<body>
+    <h1>Witaj w SkillFlow!</h1>
+    <script>
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('./public/sw.js');
+        }
+    </script>
+</body>
+</html>
