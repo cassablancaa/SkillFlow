@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { BackIcon } from "./Icons";
+import "../styles/LoginPage.css";
 
 export default function LoginPage({ onRegisterClick, onHomeClick }) {
 	const [formData, setFormData] = useState({

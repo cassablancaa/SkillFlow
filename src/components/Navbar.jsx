@@ -1,3 +1,5 @@
+import "../styles/Navbar.css";
+
 export default function Navbar({
   onHomeClick,
   onRegisterClick,

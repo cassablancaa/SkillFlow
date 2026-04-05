@@ -4,6 +4,7 @@ import Footer from "./components/Footer";
 import HomePage from "./components/HomePage";
 import RegisterPage from "./components/RegisterPage";
 import LoginPage from "./components/LoginPage";
+import "./styles/App.css";
 
 export default function App() {
   const [currentPage, setCurrentPage] = useState("home");

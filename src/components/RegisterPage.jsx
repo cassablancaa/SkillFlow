@@ -1,5 +1,6 @@
 import { useState } from "react";
-import { BackIcon, HomeIcon, UserIcon, EyeIcon,LockIcon, EyeOffIcon, RegisterIcon, SettingsIcon,MailIcon, LoginIcon,LogoutIcon, SearchIcon } from "./Icons";
+import { BackIcon } from "./Icons";
+import "../styles/RegisterPage.css";
 export default function RegisterPage({ onLoginClick, onHomeClick }) {
   const [formData, setFormData] = useState({
     email: "",

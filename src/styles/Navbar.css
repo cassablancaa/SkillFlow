@@ -1,0 +1,94 @@
+.navbar {
+  background-color: var(--primary);
+  color: white;
+  padding: 1.25rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+.nav-spacer {
+  display: none;
+}
+
+.nav-center {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex: 1;
+  justify-content: flex-start;
+}
+
+.nav-home-button {
+  background: transparent;
+  border: none;
+  padding: 0;
+  color: inherit;
+}
+
+.nav-logo-img {
+  height: 40px;
+  width: auto;
+  display: block;
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.1));
+}
+
+.brand-name {
+  font-size: 24px;
+  font-weight: 800;
+  letter-spacing: -1px;
+  font-style: italic;
+  color: var(--accent);
+}
+
+.nav-right {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  flex: 1;
+  justify-content: flex-end;
+}
+
+.nav-link {
+  color: white;
+  background: transparent;
+  border: none;
+  font-size: 14px;
+  font-weight: 600;
+  transition: opacity 0.2s;
+  padding: 0;
+}
+
+.nav-btn-cta {
+  background: rgba(255, 255, 255, 0.2);
+  padding: 8px 18px;
+  border-radius: 50px;
+  backdrop-filter: blur(5px);
+}
+
+.nav-link:hover,
+.nav-home-button:hover {
+  opacity: 0.8;
+}
+
+@media (max-width: 768px) {
+  .nav-container {
+    flex-direction: column;
+    gap: 20px;
+    padding: 0 20px;
+  }
+
+  .nav-center,
+  .nav-right {
+    justify-content: center;
+  }
+}
