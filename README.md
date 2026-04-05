@@ -123,7 +123,9 @@ npm run dev
 Po uruchomieniu Vite w terminalu pojawi się adres lokalny, najczęściej:
 
 http://localhost:5173
-![alt text](image.png)
+
+![alt text](./docs/images/npm-dev-run.png)
+
 Otwórz go w przeglądarce.
 
 ##### [↑ Powrót do spisu treści](#spis-tresci)
