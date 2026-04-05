@@ -1,3 +1,5 @@
+**README skonstruowane na potrzeby zespołu, później przerobimy to na typowe README**
+
 SkillFlow to frontend aplikacji webowej do wymiany umiejętności między użytkownikami.  
 Celem projektu jest stworzenie intuicyjnej platformy, która umożliwi użytkownikom:
 
@@ -46,8 +48,6 @@ Na obecnym etapie projekt zawiera:
 - formularz rejestracji,
 - formularz logowania,
 - podstawową strukturę komponentów w React.
-
-Projekt został przygotowany tak, aby można było go rozwijać zespołowo i wygodnie utrzymywać w repozytorium GitHub.
 
 ##### [↑ Powrót do spisu treści](#spis-tresci)
 
@@ -195,22 +195,37 @@ Przykładowa struktura projektu:
 ```
 SkillFlow/
 ├── public/
-│   └── logo.jpg
+│   ├── logo.jpg
+│   ├── manifest.json
+│   └── sw.js
 ├── src/
 │   ├── components/
 │   │   ├── Footer.jsx
 │   │   ├── HomePage.jsx
+│   │   ├── Icons.jsx
 │   │   ├── LoginPage.jsx
-|   |   ├── Icons.jsx
 │   │   ├── Navbar.jsx
 │   │   └── RegisterPage.jsx
+│   ├── styles/
+│   │   ├── App.css
+│   │   ├── AuthPage.css
+│   │   ├── Button.css
+│   │   ├── Footer.css
+│   │   ├── HomePage.css
+│   │   ├── LoginPage.css
+│   │   ├── Navbar.css
+│   │   └── RegisterPage.css
 │   ├── App.jsx
 │   ├── index.css
 │   └── main.jsx
+├── docs/
+│   └── images/
+│       └── npm-dev-run.png
 ├── .gitignore
 ├── README.md
 ├── package.json
 ├── package-lock.json
+├── style.css
 ├── vite.config.js
 └── index.html
 ```
@@ -219,10 +234,12 @@ Krótkie wyjaśnienie:
 
 - public/ – pliki statyczne, np. logo
 - src/ – kod źródłowy aplikacji
+- docs/ – materiały pomocnicze do dokumentacji projektu, np. zrzuty ekranu; docelowo miejsce na dodatkowe grafiki, diagramy i inne zasoby opisowe
 - components/ – komponenty React
+- styles/ – style podzielone na osobne pliki dla komponentów i sekcji wspólnych
 - App.jsx – główny komponent aplikacji
 - main.jsx – punkt wejścia aplikacji
-- index.css – globalne style
+- index.css – globalne style bazowe, zmienne CSS i reset
 - package.json – zależności i skrypty projektu
 - .gitignore – pliki ignorowane przez Git
 - README.md – dokumentacja projektu
@@ -242,7 +259,8 @@ Na obecnym etapie projekt zawiera:
 - formularz rejestracji,
 - formularz logowania,
 - podstawową walidację formularza rejestracji,
-- wspólny navbar i footer.
+- wspólny navbar i footer,
+- uporządkowany podział styli na pliki komponentowe.
 
 ##### [↑ Powrót do spisu treści](#spis-tresci)
 
@@ -444,7 +462,7 @@ Sprawdź:
 
 - czy zależności zostały zainstalowane,
 - czy nie ma błędu w kodzie,
-  czy terminal nie pokazuje informacji o brakujących paczkach.
+- czy terminal nie pokazuje informacji o brakujących paczkach.
 
 3. Konflikt przy git pull
 
