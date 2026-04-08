@@ -1,94 +1,13 @@
-<!DOCTYPE html>
-<html lang="pl">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="manifest" href="./public/manifest.json">
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
-    <title>SkillFlow - Wymiana Umiejętności</title>
-</head>
-<body>
-
-    <nav class="navbar">
-        <div class="nav-container">
-            <div class="nav-spacer"></div>
-            
-            <div class="nav-center">
-                <img src="public/logo.jpg" alt="Logo" class="nav-logo-img">
-                <span class="brand-name">SkillFlow</span>
-            </div>
-
-            <div class="nav-right">
-                <a href="#" class="nav-link">Załóż konto</a>
-                <a href="#" class="nav-link nav-btn-cta">Zaloguj się</a>
-            </div>
-        </div>
-    </nav>
-
-    <main class="main-content">
-        <section class="hero-section">
-            <div class="container-narrow">
-                <h1 class="hero-title">Znajdź partnera do nauki <br><span>w Twojej okolicy</span></h1>
-                <p class="hero-description">Ucz innych tego, co potrafisz, a oni odwdzięczą się swoją wiedzą. Bez pieniędzy, tylko czysta wymiana skilli.</p>
-                <div class="hero-btns">
-                    <button class="main-btn">Zacznij teraz — to za darmo</button>
-                </div>
-            </div>
-        </section>
-
-        <section class="benefits-section">
-            <div class="container-wide">
-                <div class="benefits-grid">
-                    <div class="benefit-card">
-                        <div class="benefit-icon">📍</div>
-                        <h3>Lokalnie i Online</h3>
-                        <p>Filtruj użytkowników po lokalizacji lub ucz się zdalnie.</p>
-                    </div>
-                    <div class="benefit-card">
-                        <div class="benefit-icon">⭐</div>
-                        <h3>System Ocen</h3>
-                        <p>Buduj profil eksperta dzięki rzetelnym opiniom.</p>
-                    </div>
-                    <div class="benefit-card">
-                        <div class="benefit-icon">💬</div>
-                        <h3>Czat i Kalendarz</h3>
-                        <p>Umawiaj się na sesje bezpośrednio w aplikacji.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <section class="benefits-section">
-        <div class="container-extra-wide">
-            <div class="benefits-grid">
-                </div>
-        </div>
-    </section>
-
-    <footer class="main-footer">
-        <div class="footer-content">
-            <div class="footer-left">
-                <span class="footer-brand">SkillFlow</span>
-                <p>© 2026 — Wymieniaj się wiedzą.</p>
-            </div>
-            <div class="footer-center">
-                <a href="kodeks.html" class="footer-link">Kodeks Użytkownika</a>
-                <a href="#faq" class="footer-link">FAQ</a>
-            </div>
-            <div class="footer-right">
-                <span class="footer-label">Kontakt:</span>
-                <a href="mailto:kontakt@skillflow.pl" class="footer-email">kontakt@skillflow.pl</a>
-            </div>
-        </div>
-        <div class="footer-bottom-bar"></div>
-    </footer>
-
-    <script>
-        if ('serviceWorker' in navigator) {
-            navigator.serviceWorker.register('./public/sw.js');
-        }
-    </script>
-</body>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- <link rel="icon" type="image/svg+xml" href="/vite.svg" /> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SkillFlow</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
 </html>

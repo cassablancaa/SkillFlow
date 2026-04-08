@@ -1,0 +1,29 @@
+.main-btn {
+  background: linear-gradient(135deg, #5b6af9 0%, #7380ff 100%);
+  color: white;
+  border: none;
+  padding: 16px 32px;
+  font-size: 16px;
+  font-weight: 700;
+  border-radius: 12px;
+  cursor: pointer;
+  box-shadow: 0 10px 20px rgba(91, 106, 249, 0.2);
+  transition: transform 0.2s, box-shadow 0.2s;
+  animation: buttonPulse 3.5s ease-in-out infinite;
+}
+
+.main-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 16px 30px rgba(91, 106, 249, 0.28);
+}
+
+@keyframes buttonPulse {
+  0%,
+  100% {
+    box-shadow: 0 10px 20px rgba(91, 106, 249, 0.2);
+  }
+
+  50% {
+    box-shadow: 0 16px 30px rgba(91, 106, 249, 0.3);
+  }
+}
